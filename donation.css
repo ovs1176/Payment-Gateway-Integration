@@ -1,0 +1,228 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+body h2{
+    color: rgb(17, 57, 236);
+}
+.heading h2{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+header {
+	background:url('bg.jpg');
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.heading{
+	float: left;
+}
+.heading img {
+	width: 100%;
+}
+.redbg{
+	position: absolute;
+	width: 550px;
+	height: 200px;
+    margin: 10% 20%;
+	text-align: center;
+}
+.redbg h3 {
+	text-align: center;
+	color: rgb(207, 223, 71);
+	text-transform: uppercase;
+	font-size: 40px;
+    padding : 10px 10px;
+}
+.redbg h3 span {
+	color: #0cf072;
+}
+.redbg a {
+	border: 1px solid rgb(213, 236, 6);
+	padding: 25px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: rgb(201, 7, 81);
+}
+.redbg a:hover {
+	background: rgb(56, 25, 196);
+	color: rgb(248, 51, 2);
+}
+.excel{
+    /* height: 50vh; */
+    height: 50px;
+    width: auto;
+    /* overflow: scroll; */
+    /* overflow-x: hidden; */
+    background-size: 6px 6px;
+  }
+
+
+@media (max-width:600px) {
+
+	.heading {
+		
+		width: 80%;
+    text-align: center;
+    margin-left: 120px;
+		
+	}
+	.redbg{
+		width: 100%;
+		height: auto;
+    margin: 30% 0;
+    overflow: scroll;
+    overflow-x: hidden;
+	}
+	.redbg h1 {
+		font-size: 30px;
+  }
+  .heading h3{
+    text-align: center;
+    width:140px;
+    margin-left: 20px;
+  }
+  
+}
+body {
+    margin: 0;
+    font-family: Montserrat;
+  }
+  
+  a {
+    color: rgb(240, 9, 9);
+  }
+  
+  
+  
+  .header {
+    background-color: rgb(167, 101, 101);
+    margin-top: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    
+  }
+  
+  .header li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background: #fff;
+	color: #333;
+  }
+  
+  .header .heading{
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .1s ease-out;
+  }
+  
+  .header .menu-icon {
+  
+    cursor: pointer;
+    display: inline-block;
+    padding: 30px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: rgb(236, 149, 207);
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 17px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: rgb(238, 194, 236);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 4px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -4px;
+  }
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 230px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
